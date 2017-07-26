@@ -1,0 +1,21 @@
+language: objective-c
+
+matrix:
+  include:
+  # https://docs.travis-ci.com/user/reference/osx/#OS-X-Version
+  # OS X 10.12
+  - os: osx
+    osx_image: xcode8.3
+  # OS X 10.11
+  - os: osx
+    osx_image: xcode8
+  # OS X 10.10
+  - os: osx
+    osx_image: xcode6.4
+
+install:
+- brew update
+
+script:
+- brew install --build-bottle --verbose Formula/*.rb
+- brew test Formula/*.rb
