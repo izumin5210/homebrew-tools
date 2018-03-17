@@ -11,6 +11,10 @@ class Grapi < Formula
   version VERSION
   sha256 "133072f0063938c9977c436dd064eb6a6cfaa99e98297fd69dddd0421a9a16c6"
 
+  head do
+    url "https://github.com/#{REPO}/releases/download/canary/#{BIN}"
+  end
+
   def install
     mv BIN, NAME
     bin.install NAME
