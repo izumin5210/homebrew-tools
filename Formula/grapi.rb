@@ -1,5 +1,5 @@
 class Grapi < Formula
-  VERSION = "0.1.3".freeze
+  VERSION = "0.2.0".freeze
   NAME = "grapi".freeze
   REPO = "izumin5210/#{NAME}".freeze
   ARCH = "darwin_amd64".freeze
@@ -9,7 +9,7 @@ class Grapi < Formula
   homepage "https://github.com/#{REPO}"
   url "https://github.com/#{REPO}/releases/download/v#{VERSION}/#{BIN}"
   version VERSION
-  sha256 "133072f0063938c9977c436dd064eb6a6cfaa99e98297fd69dddd0421a9a16c6"
+  sha256 "419abddc904e582eac2893d8dbdee010a0132454193681c2ead4b880315f078c"
 
   head do
     url "https://github.com/#{REPO}/releases/download/canary/#{BIN}"
