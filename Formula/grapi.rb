@@ -5,7 +5,7 @@ class Grapi < Formula
   ARCH = "darwin_amd64".freeze
   BIN = "#{NAME}_#{ARCH}".freeze
 
-  desc "JSON API framework implemented with gRPC and Gateway"
+  desc "A surprisingly easy API server and generator in gRPC and Go"
   homepage "https://github.com/#{REPO}"
   url "https://github.com/#{REPO}/releases/download/v#{VERSION}/#{BIN}"
   version VERSION
