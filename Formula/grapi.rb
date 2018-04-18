@@ -1,15 +1,15 @@
 class Grapi < Formula
-  VERSION = "0.2.0".freeze
+  VERSION = "0.2.1".freeze
   NAME = "grapi".freeze
   REPO = "izumin5210/#{NAME}".freeze
   ARCH = "darwin_amd64".freeze
   BIN = "#{NAME}_#{ARCH}".freeze
 
-  desc "JSON API framework implemented with gRPC and Gateway"
+  desc "A surprisingly easy API server and generator in gRPC and Go"
   homepage "https://github.com/#{REPO}"
   url "https://github.com/#{REPO}/releases/download/v#{VERSION}/#{BIN}"
   version VERSION
-  sha256 "419abddc904e582eac2893d8dbdee010a0132454193681c2ead4b880315f078c"
+  sha256 "620a72dfa4b0aea80c3943b9953391d765deb22615c982a767cfa112c65e594d"
 
   head do
     url "https://github.com/#{REPO}/releases/download/canary/#{BIN}"
