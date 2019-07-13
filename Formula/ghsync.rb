@@ -1,8 +1,8 @@
 class Ghsync < Formula
-  version '0.0.6'
+  version '0.0.7'
   homepage 'https://github.com/izumin5210/ghsync'
-  url "https://github.com/izumin5210/ghsync/releases/download/v0.0.6/ghsync_darwin_amd64.zip"
-  sha256 'd78263b42a5b1a716a44ed8f5b0236a1ebd67d8bbc39ab883db9763103a8179d'
+  url "https://github.com/izumin5210/ghsync/releases/download/v0.0.7/ghsync_darwin_amd64.zip"
+  sha256 '663295890ff94ddb186a854683740817007a692e53366bdb2cc9a0dabc960f41'
   head 'https://github.com/izumin5210/ghsync.git'
 
   head do
