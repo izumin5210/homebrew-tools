@@ -9,6 +9,8 @@ jobs:
     runs-on: ${{ matrix.runs-on }}
 
     steps:
+    - uses: actions/checkout@v1
+
     - name: Install tools
       run: |
         brew install --build-bottle --verbose Formula/*.rb
