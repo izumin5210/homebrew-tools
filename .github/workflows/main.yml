@@ -1,0 +1,21 @@
+name: CI
+on: [push]
+jobs:
+  test:
+    strategy:
+      matrix:
+        runs-on: ['macOS-latest', 'macOS-10.14']
+
+    runs-on: ${{ matrix.runs-on }}
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Install tools
+      run: |
+        brew install --build-bottle --verbose Formula/*.rb
+
+    # FIXME: Some tools have no tests
+    # - name: Run tests
+    #   run: |
+    #     brew test Formula/*.rb
