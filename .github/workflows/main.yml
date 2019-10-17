@@ -4,7 +4,7 @@ jobs:
   test:
     strategy:
       matrix:
-        runs-on: ['macOS-latest', 'macOS-10.14']]
+        runs-on: ['macOS-latest', 'macOS-10.14']
 
     runs-on: ${{ matrix.runs-on }}
 
